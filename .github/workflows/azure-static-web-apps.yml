@@ -1,0 +1,38 @@
+name: Azure Static Web Apps CI/CD
+
+on:
+  push:
+    branches:
+      - main  # Adjust this to your deployment branch
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+jobs:
+  build_and_deploy_job:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged)
+    runs-on: ubuntu-latest
+    name: Build and Deploy Job
+    steps:
+      - name: Checkout GitHub Action
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'  # Adjust this to your Node.js version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build  # Adjust this to your build script
+
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for GitHub integrations (i.e. PR comments)
+          action: 'upload'
+          app_location: '/'  # Adjust this to your app's location
+          api_location: ''  # Adjust this if you have an API
+          output_location: 'build'  # Adjust this to your build output folder
