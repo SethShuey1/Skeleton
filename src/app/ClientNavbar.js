@@ -3,12 +3,13 @@
 import Link from "next/link";
 import { Home, Info, Briefcase } from "lucide-react";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const DesktopNavbar = () => (
   <nav className="bg-gray-800 p-4 hidden md:block">
     <div className="container mx-auto flex flex-col items-center">
       <div className="text-white font-bold text-xl mb-4">
-        <img
+        <Image
           src="/APDS-logo.svg"
           alt="APDS Landscaping Logo"
           width={200}

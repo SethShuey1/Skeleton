@@ -15,12 +15,12 @@ export default function About() {
       </div>
 
       <p className="mb-4 text-lg">
-        Welcome to APDS Landscaping, Lubbock's premier landscaping service since
-        2005. At APDS, we believe that every outdoor space has the potential to
-        become a breathtaking oasis. Our team of skilled professionals combines
-        artistic vision with horticultural expertise to transform ordinary yards
-        into extraordinary landscapes that reflect the unique beauty of West
-        Texas.
+        Welcome to APDS Landscaping, Lubbock&rsquo;s premier landscaping service
+        since 2005. At APDS, we believe that every outdoor space has the
+        potential to become a breathtaking oasis. Our team of skilled
+        professionals combines artistic vision with horticultural expertise to
+        transform ordinary yards into extraordinary landscapes that reflect the
+        unique beauty of West Texas.
       </p>
 
       <p className="text-lg">
@@ -28,7 +28,7 @@ export default function About() {
         Landscaping has grown from a small family operation to a trusted name in
         residential and commercial landscaping across the South Plains. We pride
         ourselves on our deep understanding of local climate conditions, water
-        conservation techniques, and native plant species. Whether you're
+        conservation techniques, and native plant species. Whether you&rsquo;re
         looking to create a drought-resistant xeriscape, install a custom
         irrigation system, or design a lush garden retreat, APDS Landscaping is
         committed to bringing your vision to life while respecting the natural
