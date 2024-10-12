@@ -30,7 +30,7 @@ jobs:
         env:
           NODE_VERSION: '20.9.0'
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_eed3c3a3b3ba57beb8dbbf8e2d861fac858214e4ee4e0c20b5f0efec9cc783ff5-35bedeba-fb27-42ae-b821-c84e28603246010580913 }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_SKELE2 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "/" # App source code path
